@@ -22,8 +22,8 @@ class GpuProfiler:
 		print(proc.stdout)
 		print(proc.stderr)
 	
-	def create_reports(self):
-		print("creating reports...")
+	def create_stats(self):
+		print("creating stats files...")
 		for item in os.listdir(self.session_name):
 			report_path = os.path.join(self.session_name, item, "%s.nsys-rep" % item)
 			stats_path = os.path.join(self.session_name, item, item)

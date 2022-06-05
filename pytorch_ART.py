@@ -647,7 +647,7 @@ def main(args):
 			profiler.start_profiling("allblack")
 			all.allblack(i, x_test, y_test, classifier, k)
 			profiler.stop_profiling()
-			profiler.create_reports()
+			profiler.create_stats()
 			# os.system("killall nvidia-smi")
 		#bisogna esser sicuri di non lasciare questi processi a giro
 		print("creo i dataset fusi")
